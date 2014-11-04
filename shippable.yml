@@ -3,7 +3,7 @@ language: php
 build_image: shippableimages/ubuntu1204_php
 
 php:
-  - 5.3
+  - 5.4
   
 env:
   - mkdir -p shippable/codecoverage
