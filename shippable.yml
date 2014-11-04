@@ -3,9 +3,10 @@ language: php
 build_image: shippableimages/ubuntu1204_php
 
 php:
-  - 5.4
+  - 5.5
   
 env:
+ global:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
 
