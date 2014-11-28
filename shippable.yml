@@ -4,9 +4,10 @@ build_image: shippableimages/ubuntu1204_php
 
 php:
   - 5.5
+  - 5.4
+  - 5.3
+  - 5.6
  
- 
- [shippable new build status flow] 
 env:
  global:
   - mkdir -p shippable/codecoverage
@@ -22,3 +23,4 @@ script:
 
 
       
+archive: true
