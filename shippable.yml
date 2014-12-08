@@ -1,12 +1,11 @@
 language: php
 
-build_image: shippableimages/ubuntu1204_php
+build_image: shippableimages/ubuntu1404_php
 
 php:
   - 5.5
   - 5.6
- 
- 
+
 env:
  global:
   - mkdir -p shippable/codecoverage
