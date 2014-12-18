@@ -2,12 +2,13 @@ language: php
 
 build_image: shippableimages/ubuntu1204_php
 
-php:
 
+php:
 #  - 5.5
   - 5.4
 #  - 5.3
   - 5.6
+ 
  
 env:
  global:
@@ -23,5 +24,4 @@ script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 
 
-      
 archive: true
