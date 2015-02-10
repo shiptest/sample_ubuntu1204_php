@@ -18,6 +18,7 @@ before_install:
   - php --version
 
 script:
+  - git --version
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 
 
